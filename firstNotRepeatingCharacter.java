@@ -4,8 +4,7 @@ char firstNotRepeatingCharacter(String s) {
 		char temp = '_';
 		if (arr.length < 2){
 			return arr[0];
-    }
-        
+    		}
 		for (int i = 0; i < s.length(); i++) {
 			for (int j = 0; j < s.length(); j++) {
 				if (i != j) {
@@ -22,6 +21,6 @@ char firstNotRepeatingCharacter(String s) {
 				break;
 			}
 			count = 0;
-    }
+    		}
     return temp;
 }
